@@ -41,7 +41,7 @@ function OnePointNine(){
 
   //Calculation of user inputs
 
-  var e = (Number(a) * 1.9) * 2;
+  var e = (Number(a) * (1.9)) * 2;
   var f = Number(c) - Number(e);
   var x = Math.ceil(f);
 
