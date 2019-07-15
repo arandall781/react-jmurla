@@ -36,14 +36,13 @@ document.getElementById("clickMeee").onclick =
 function OnePointNine(){
 
   var a, c;
-  a = prompt("Enter 1st Place Contribution Bonus")
-  c = prompt("Max FP of GB")
+  a = prompt("Enter 1st Place Contribution Bonus");
+  c = prompt("Max FP of GB");
 
   //Calculation of user inputs
 
-  var e = Number(a) * 1.9;
-  var d = Number(e) * 2;
-  var f = Number(c) - Number(d);
+  var e = (Number(a) * 1.9) * 2;
+  var f = Number(c) - Number(e);
 
   //Show results of calculation
 
