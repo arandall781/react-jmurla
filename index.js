@@ -19,7 +19,7 @@ var c = Number(a) - Number(b);
 var f = Number(c) - Number(e);
 var g = Number(f) / 2;
 var x = Number(g) + Number(e);
-var z = Math.ceil(x)
+var z = Math.ceil(x);
 
 
 //Show results of calculation
@@ -43,6 +43,7 @@ function OnePointNine(){
 
   var e = (Number(a) * 1.9) * 2;
   var f = Number(c) - Number(e);
+  var x = Math.ceil(f);
 
   //Show results of calculation
 
