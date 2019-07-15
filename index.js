@@ -25,23 +25,29 @@ var z = Math.ceil(x)
 //Show results of calculation
 
 alert("You must donate " + z + " Forge Points"); 
-//User prompt for verification
-
-var h = prompt("Let's verify! What is your new donated FP total?")
-
-//Calculation of user prompt for verification
-
-var i = Number(b) + Number(x);
-var j = Number(a) - Number(i);
-var k = Number(e) + Number(j);
-
-//Show results of calculation for verification
-
-if (Number(k) > Number(h)) {
-  alert("Incorrect! You are NOT locked in yet!");
-} else {
-  alert("All set! That is the correct amount. You are locked in. =)");
+location.reload()
+render(<App />, document.getElementById('root'));
 }
 
+
+//User prompts for Calculation
+
+document.getElementById("clickMeee").onclick = 
+function OnePointNine(){
+
+  var a, c;
+  a = prompt("Enter 1st Place Contribution Bonus")
+  c = prompt("Max FP of GB")
+
+  //Calculation of user inputs
+
+  var e = Number(a) * 1.9;
+  var d = Number(e) * 2;
+  var f = Number(c) - Number(d);
+
+  //Show results of calculation
+
+alert("You must donate " + f + " Forge Points to Secure 1st Place's Position");
+location.reload()
 render(<App />, document.getElementById('root'));
 }
