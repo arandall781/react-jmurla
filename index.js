@@ -47,7 +47,7 @@ function OnePointNine(){
 
   //Show results of calculation
 
-alert("You must donate " + f + " Forge Points to Secure 1st Place's Position");
+alert("You must donate " + x + " Forge Points to Secure 1st Place's Position");
 location.reload()
 render(<App />, document.getElementById('root'));
 }
