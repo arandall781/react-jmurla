@@ -28,26 +28,3 @@ alert("You must donate " + z + " Forge Points");
 location.reload()
 render(<App />, document.getElementById('root'));
 }
-
-
-//User prompts for Calculation
-
-document.getElementById("clickMeee").onclick = 
-function OnePointNine(){
-
-  var a, c;
-  a = prompt("Enter 1st Place Contribution Bonus");
-  c = prompt("Max FP of GB");
-
-  //Calculation of user inputs
-
-  var e = Number(a) * 3.8;
-  var f = Number(c) - Number(e);
-  var x = Math.ceil(f);
-
-  //Show results of calculation
-
-alert("You must donate " + x + " Forge Points to Secure 1st Place's Position");
-location.reload()
-render(<App />, document.getElementById('root'));
-}
